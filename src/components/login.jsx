@@ -13,7 +13,7 @@ export default function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://cs9sbdbe-production.up.railway.app/user/login', {
+            const response = await axios.post('https://cs9sbdbe-production.up.railway.app/api/user/login', {
                 email,
                 password,
             });
