@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get("http://localhost:5444/api/item");
+        await axios.get("https://cs9sbdbe-production.up.railway.app/api/item");
         setItems(response.data.payload);
       } catch (error) {
         console.error("Error fetching items:", error);
